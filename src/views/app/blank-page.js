@@ -4,6 +4,10 @@ import IntlMessages from "../../helpers/IntlMessages";
 import { Colxx, Separator } from "../../components/common/CustomBootstrap";
 import Breadcrumb from "../../containers/navs/Breadcrumb";
 
+import RecentOrders from '../../containers/dashboards/RecentOrders';
+import AvailityDefaultValues from '../../containers/form-validations/AvailityDefaultValues';
+
+
 export default class BlankPage extends Component {
     render() {
         return (
@@ -19,6 +23,19 @@ export default class BlankPage extends Component {
                 <p><IntlMessages id="menu.blank-page"/></p>
               </Colxx>
             </Row>
+            <Row>
+          
+          <Colxx lg="12" xl="6" className="mb-4">
+            <AvailityDefaultValues />
+            
+          </Colxx>
+
+          <Colxx lg="12" xl="6" className="mb-4">
+          <RecentOrders />
+          
+          </Colxx>
+        </Row>
+
           </Fragment>
           
         )

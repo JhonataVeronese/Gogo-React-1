@@ -31,8 +31,8 @@ class AvailityDefaultValues extends Component {
     const defaultValues = {
       locationType: "work",
       locationQualities: ["beautiful", "awesome", "wonderful"],
-      firstname: "Sarah",
-      lastname: "Kortney",
+      firstname: "Karimax",
+      lastname: "Lazaar",
       location: {
         street: "10752 Deerwood Park Blvd",
         suite: "110",
