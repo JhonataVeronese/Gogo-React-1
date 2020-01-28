@@ -171,28 +171,21 @@ const data = [{
       },
     ]
   },
-  {
-    id: "applications",
-    icon: "iconsminds-air-balloon-1",
-    label: "menu.applications",
-    to: "/app/applications",
-    subs: [{
-        icon: "simple-icon-check",
-        label: "menu.todo",
-        to: "/app/applications/todo"
-      },
-      {
-        icon: "simple-icon-calculator",
-        label: "menu.survey",
-        to: "/app/applications/survey"
-      },
-      {
-        icon: "simple-icon-bubbles",
-        label: "menu.chat",
-        to: "/app/applications/chat"
-      }
-    ]
-  },
+  // {
+  //   id: "applications",
+  //   icon: "iconsminds-air-balloon-1",
+  //   label: "menu.applications",
+  //   to: "/app/applications",
+  //   subs: [{
+  //       icon: "simple-icon-check",
+  //       label: "menu.todo",
+  //       to: "/app/applications/todo"
+  //     },
+      
+      
+  //   ]
+  // },
+  
   {
     id: "ui",
     icon: "iconsminds-pantone",

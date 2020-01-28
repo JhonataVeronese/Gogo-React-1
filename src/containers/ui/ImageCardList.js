@@ -25,7 +25,7 @@ const ImageCardList = () => {
                 <p className="mb-1 text-muted text-small w-15 w-sm-100">Cakes</p>
                 <p className="mb-1 text-muted text-small w-15 w-sm-100">09.04.2018</p>
                 <div className="w-15 w-sm-100">
-                  <Badge color="primary" pill >PROCESSED</Badge>
+                  <Badge color="primary" pill >MOVIE</Badge>
                 </div>
               </div>
               <div className="custom-control custom-checkbox pl-1 align-self-center pr-4">
@@ -53,7 +53,7 @@ const ImageCardList = () => {
                 <p className="mb-1 text-muted text-small w-15 w-sm-100">Cupcakes</p>
                 <p className="mb-1 text-muted text-small w-15 w-sm-100">09.04.2018</p>
                 <div className="w-15 w-sm-100">
-                  <Badge color="secondary" pill >ON HOLD</Badge>
+                  <Badge color="secondary" pill >Talk Show</Badge>
                 </div>
               </div>
               <div className="custom-control custom-checkbox pl-1 align-self-center pr-4">

@@ -27,10 +27,7 @@ const MenuLevels = ({ match }) => (
         path={`${match.url}/third-level-2`}
         render={props => <ThirdLevel2 {...props} />}
       />
-      <Route
-        path={`${match.url}/third-level-3`}
-        render={props => <ThirdLevel3 {...props} />}
-      />
+      
       <Redirect to="/error" />
     </Switch>
   </Suspense>
