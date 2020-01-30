@@ -290,14 +290,7 @@ class DetailsPages extends Component {
                     </p>
                   </CardBody>
                 </Card>
-                <Card className="mb-4">
-                  <CardBody>
-                    <CardTitle>
-                      <IntlMessages id="pages.similar-projects" />
-                    </CardTitle>
-                    <GalleryDetail />
-                  </CardBody>
-                </Card>
+
               </Colxx>
             </Row>
           </Colxx>

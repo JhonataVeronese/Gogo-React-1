@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import DatePickerExamples from "../forms/DatePickerExamples";
+import TagsInputExample from "../forms/TagsInputExample";
+import DropzoneExample from "../forms/DropzoneExample";
 import {
   AvForm,
   AvField,
@@ -10,7 +13,9 @@ import {
   AvCheckboxGroup,
   AvCheckbox
 } from "availity-reactstrap-validation";
-import { Button, Label, Card, CardBody } from "reactstrap";
+import { Button, Label, Card, CardBody, CardTitle } from "reactstrap";
+
+
 
 class AvailityBasic extends Component {
   constructor(props) {
@@ -27,6 +32,7 @@ class AvailityBasic extends Component {
   }
 
   render() {
+    
     return (
       <Card className="mb-5">
         <CardBody>
@@ -34,57 +40,75 @@ class AvailityBasic extends Component {
           <AvForm
             className="av-tooltip tooltip-label-right"
             onSubmit={this.handleSubmit}>
+            
             <AvGroup>
-              <Label>Name</Label>
-              <AvInput name="name" required />
-              <AvFeedback>Name is required!</AvFeedback>
-            </AvGroup>
-
-            <AvGroup>
-              <Label>Rank</Label>
-              <AvInput name="rank" required />
-              <AvFeedback>This is an error!</AvFeedback>
+              <Label>Show Title</Label>
+              <AvInput name="show title" required />
+              <AvFeedback>Title is required!</AvFeedback>
             </AvGroup>
 
             <AvField
               type="select"
               name="select"
               required
-              label="Option"
+              label="Genre"
               errorMessage="Please select an option!">
               <option value="0" />
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+              <option>Movie</option>
+              <option>Talk Show</option>
+              <option>News</option>
+              <option>Serie</option>
+              <option>Sport</option>
+            </AvField>
+
+            <AvField
+              type="select"
+              name="select"
+              required
+              label="Main Language"
+              errorMessage="Please select an option!">
+              <option value="0" />
+              <option>Arabic</option>
+              <option>English</option>
+              <option>Frensh</option>
+              <option>Spanish</option>
+              <option>Chinees</option>
+            </AvField>
+
+            <AvField
+              type="select"
+              name="select"
+              required
+              label="Subtitle"
+              errorMessage="Please select an option!">
+              <option value="1" />
+              <option>Not Availble</option>
+              <option>Arabic</option>
+              <option>English</option>
+              <option>Frensh</option>
+              <option>Spanish</option>
+              <option>Chinees</option>
             </AvField>
 
             <AvGroup>
-              <Label>Details</Label>
+              <Label>Show description</Label>
               <AvInput type="textarea" name="details" id="details" required />
-              <AvFeedback>Please enter some details!</AvFeedback>
+              <AvFeedback>Please enter show description!</AvFeedback>
             </AvGroup>
 
-            <AvRadioGroup
-              className="error-l-150"
-              name="radioCustomInputExample"
-              required>
-              <Label className="d-block">Custom Radio Buttons</Label>
-              <AvRadio customInput label="Cake" value="Cake" />
-              <AvRadio customInput label="Cupcake" value="Cupcake" />
-              <AvRadio customInput label="Dessert" value="Dessert" />
-            </AvRadioGroup>
+            
+            <DatePickerExamples/>
+            <DatePickerExamples/>  
+            <TagsInputExample/>
 
-            <AvCheckboxGroup
-              className="error-l-150"
-              inline
-              name="checkboxCustomInputExample2"
-              required>
-              <Label className="d-block">Custom Checkboxes</Label>
-              <AvCheckbox customInput label="Yes" value="Yes" />
-              <AvCheckbox customInput label="No" value="No" />
-            </AvCheckboxGroup>
+                <CardTitle>
+                  Upload show cover
+                </CardTitle>
+                <DropzoneExample ref={ node => this.dropzone = node }/>
+
+            
+
+            
             <Button color="primary">Submit</Button>
           </AvForm>
         </CardBody>

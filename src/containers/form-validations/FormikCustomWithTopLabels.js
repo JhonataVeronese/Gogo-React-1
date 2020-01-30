@@ -177,6 +177,7 @@ class FormikCustomWithTopLabels extends Component {
                           </div>
                         ) : null}
                       </FormGroup>
+                      
 
                       <Button color="primary" type="submit">
                         Submit
@@ -199,7 +200,7 @@ class FormikCustomWithTopLabels extends Component {
 
                 <Formik
                   initialValues={{
-                    email: "test@test.com",
+                    email: "test2@test.com",
                     password: "",
                     tags: [],
                     date: null,

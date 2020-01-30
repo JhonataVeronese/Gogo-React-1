@@ -77,7 +77,7 @@ export default class JumbotronUi extends Component {
             <Card>
               <CardBody>
                 <CardTitle>
-                  <IntlMessages id="form-components.dropzone" />
+                  Upload show cover
                 </CardTitle>
                 <DropzoneExample ref={ node => this.dropzone = node }/>
               </CardBody>

@@ -16,7 +16,7 @@ export default function RecentOrders() {
       </div>
       <CardBody>
         <CardTitle>
-          <IntlMessages id="dashboards.recent-orders" />
+          Recent Shows
         </CardTitle>
         <div className="scroll dashboard-list-with-thumbs">
           <PerfectScrollbar
