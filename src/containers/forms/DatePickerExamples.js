@@ -55,44 +55,6 @@ class DatePickerExamples extends Component {
     return (
       <Row>
         <Colxx xxs="12" xl="8" className="mb-4">
-          <Card>
-            <CardBody>
-              <CardTitle>
-                <IntlMessages id="form-components.date-picker" />
-              </CardTitle>
-              <label>
-                <IntlMessages id="form-components.date" />
-              </label>
-              <div className="mb-5">
-                <DatePicker
-                  selected={this.state.startDate}
-                  onChange={this.handleChangeDate}
-                  placeholderText={messages["forms.date"]}/>
-              </div>
-              <label>
-                <IntlMessages id="form-components.date-range" />
-              </label>
-              <Row className="mb-5">
-                <Colxx xxs="6">
-                  <DatePicker
-                    selected={this.state.startDateRange}
-                    selectsStart
-                    startDate={this.state.startDateRange}
-                    endDate={this.state.endDateRange}
-                    onChange={this.handleChangeStart}
-                    placeholderText={messages["form-components.start"]}/>
-                </Colxx>
-                <Colxx xxs="6">
-                  <DatePicker
-                    selected={this.state.endDateRange}
-                    selectsEnd
-                    startDate={this.state.startDateRange}
-                    endDate={this.state.endDateRange}
-                    onChange={this.handleChangeEnd}
-                    placeholderText={messages["form-components.end"]} />
-                </Colxx>
-              </Row>
-
               <label>
                 <IntlMessages id="form-components.date-with-time" />
               </label>
@@ -106,26 +68,10 @@ class DatePickerExamples extends Component {
                 timeIntervals={15}
                 dateFormat="LLL"
                 timeCaption="Time" />
-            </CardBody>
-          </Card>
-        </Colxx>
-
-        <Colxx xxs="12" xl="4" className="mb-4">
-          <Card className="h-100">
-            <CardBody>
-              <CardTitle>
-                <IntlMessages id="form-components.embedded" />
-              </CardTitle>
-              <DatePicker
-                calendarClassName="embedded"
-                inline
-                selected={this.state.embeddedDate}
-                onChange={this.handleChangeEmbedded} />
-            </CardBody>
-          </Card>
         </Colxx>
       </Row>
     );
   }
 }
 export default injectIntl(DatePickerExamples);
+ 
