@@ -8,7 +8,7 @@ import FormikBasicFieldLevel from "../../../../containers/form-validations/Formi
 import FormikBasicFormLevel from "../../../../containers/form-validations/FormikBasicFormLevel";
 import FormikCustomComponents from "../../../../containers/form-validations/FormikCustomComponents";
 import FormikCustomWithTopLabels from "../../../../containers/form-validations/FormikCustomWithTopLabels";
-import AvailityBasic from "../../../../containers/form-validations/AvailityBasic";
+import ShowInesrtionForm from "../../../../containers/form-validations/ShowInesrtionForm";
 import AvailityCustom from "../../../../containers/form-validations/AvailityCustom";
 import AvailityDefaultValues from "../../../../containers/form-validations/AvailityDefaultValues";
 import TooltipLocations from "../../../../containers/form-validations/TooltipLocations";
@@ -43,7 +43,7 @@ export default class FormValidationsUi extends Component {
             <h5 className="mb-4">
               <IntlMessages id="forms.validation-availity" />
             </h5>
-            <AvailityBasic />
+            <ShowInesrtionForm />
             <AvailityCustom />
             <AvailityDefaultValues />
           </Colxx>

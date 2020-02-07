@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import DatePickerExamples from "../forms/DatePickerExamples";
+import ReplayTimePicker from "../forms/ReplayTimePicker";
 import TagsInputExample from "../forms/TagsInputExample";
-import DropzoneExample from "../forms/DropzoneExample";
+
 import {
   AvForm,
   AvField,
@@ -13,11 +14,11 @@ import {
   AvCheckboxGroup,
   AvCheckbox
 } from "availity-reactstrap-validation";
-import { Button, Label, Card, CardBody, CardTitle } from "reactstrap";
+import { Button, Label, Card, CardBody, InputGroup, CustomInput, InputGroupAddon } from "reactstrap";
 
 
 
-class AvailityBasic extends Component {
+class ShowInesrtionForm extends Component {
   constructor(props) {
     super(props);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -36,7 +37,7 @@ class AvailityBasic extends Component {
     return (
       <Card className="mb-5">
         <CardBody>
-          <h6 className="mb-4">Basic</h6>
+          <h6 className="mb-4">Insert all show info here</h6>
           <AvForm
             className="av-tooltip tooltip-label-right"
             onSubmit={this.handleSubmit}>
@@ -54,11 +55,24 @@ class AvailityBasic extends Component {
               label="Genre"
               errorMessage="Please select an option!">
               <option value="0" />
+              <option>Documentary</option>
               <option>Movie</option>
               <option>Talk Show</option>
               <option>News</option>
               <option>Serie</option>
               <option>Sport</option>
+            </AvField>
+
+            <AvField
+              type="select"
+              name="select"
+              required
+              label="Transmission"
+              errorMessage="Please select an option!">
+              <option value="0" />
+              <option>Live</option>
+              <option>Pre-Recorded</option>
+             
             </AvField>
 
             <AvField
@@ -96,17 +110,21 @@ class AvailityBasic extends Component {
               <AvFeedback>Please enter show description!</AvFeedback>
             </AvGroup>
 
-            
+            <AvGroup>
             <DatePickerExamples/>
-            <DatePickerExamples/>  
-            <TagsInputExample/>
-
-                <CardTitle>
-                  Upload show cover
-                </CardTitle>
-                <DropzoneExample ref={ node => this.dropzone = node }/>
-
+            <ReplayTimePicker/> 
+            <TagsInputExample/> 
+            </AvGroup>
             
+
+            <InputGroup className="mb-3">
+              <InputGroupAddon addonType="prepend">Upload cover</InputGroupAddon>
+              <CustomInput
+                    type="file"
+                    id="exampleCustomFileBrowser1"
+                    name="customFile"
+              />
+            </InputGroup>
 
             
             <Button color="primary">Submit</Button>
@@ -117,4 +135,4 @@ class AvailityBasic extends Component {
   }
 }
 
-export default AvailityBasic;
+export default ShowInesrtionForm;

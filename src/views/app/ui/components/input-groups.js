@@ -63,7 +63,7 @@ class InputGroupsUi extends Component {
                 </CardTitle>
 
                 <InputGroup className="mb-3">
-                  <InputGroupAddon addonType="prepend">@</InputGroupAddon>
+                  <InputGroupAddon icon="simple-icon-calendar"></InputGroupAddon>
                   <Input placeholder={messages["user.username"]} />
                 </InputGroup>
 

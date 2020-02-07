@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 
 import AppLayout from '../../layout/AppLayout';
 
+
 const Dashboards = React.lazy(() =>
   import(/* webpackChunkName: "dashboards" */ './dashboards')
 );
@@ -13,10 +14,17 @@ const Pages = React.lazy(() =>
 const Applications = React.lazy(() =>
   import(/* webpackChunkName: "applications" */ './applications')
 );
-const Ui = React.lazy(() => import(/* webpackChunkName: "ui" */ './ui'));
-const Menu = React.lazy(() => import(/* webpackChunkName: "menu" */ './menu'));
-const BlankPage = React.lazy(() =>
-  import(/* webpackChunkName: "blank-page" */ './blank-page')
+
+const FullSchedule = React.lazy(() =>
+  import(/* webpackChunkName: "menu" */ './fullschedule')
+);
+
+const ShowInsertPage = React.lazy(() =>
+  import(/* webpackChunkName: "show-insertion-page" */ './show-insertion-page')
+);
+
+const ChannelProfile = React.lazy(() =>
+  import(/* webpackChunkName: "show-insertion-page" */ './channel-profile')
 );
 
 class App extends Component {
@@ -42,20 +50,17 @@ class App extends Component {
                 render={props => <Applications {...props} />}
               />
               <Route
-                path={`${match.url}/pages`}
-                render={props => <Pages {...props} />}
+                path={`${match.url}/fullschedule`}
+                render={props => <FullSchedule {...props} />}
+              />
+              
+              <Route
+                path={`${match.url}/channel-profile`}
+                render={props => <ChannelProfile {...props} />}
               />
               <Route
-                path={`${match.url}/ui`}
-                render={props => <Ui {...props} />}
-              />
-              <Route
-                path={`${match.url}/menu`}
-                render={props => <Menu {...props} />}
-              />
-              <Route
-                path={`${match.url}/blank-page`}
-                render={props => <BlankPage {...props} />}
+                path={`${match.url}/show-insertion-page`}
+                render={props => <ShowInsertPage {...props} />}
               />
               <Redirect to="/error" />
             </Switch>

@@ -6,35 +6,35 @@ import Breadcrumb from "../../containers/navs/Breadcrumb";
 
 import RecentOrders from '../../containers/dashboards/RecentOrders';
 
-import AvailityBasic from '../../containers/form-validations/AvailityBasic';
+import ShowInesrtionForm from '../../containers/form-validations/ShowInesrtionForm';
 
 
 
-export default class BlankPage extends Component {
+export default class ShowInsertPage extends Component {
     render() {
         return (
             <Fragment>
             <Row>
               <Colxx xxs="12">
-                <Breadcrumb heading="menu.blank-page" match={this.props.match} />
+                <Breadcrumb heading="menu.show-insertion" match={this.props.match} />
                 <Separator className="mb-5" />
               </Colxx>
             </Row>
             <Row>
               <Colxx xxs="12" className="mb-4">
-                <p><IntlMessages id="menu.blank-page"/></p>
+                <p><IntlMessages id="menu.show-insertion"/></p>
               </Colxx>
             </Row>
             
 
           <Row>
-          <Colxx lg="12" xl="6" className="mb-4">
-          <AvailityBasic/>
-          </Colxx>
+            <Colxx lg="12" xl="6" className="mb-4">
+              <ShowInesrtionForm/>
+            </Colxx>
 
-          <Colxx lg="12" xl="6" className="mb-4">
-            <RecentOrders />
-          </Colxx>
+            <Colxx lg="12" xl="6" className="mb-4">
+              <RecentOrders />
+            </Colxx>
           </Row>
           
           </Fragment>

@@ -38,15 +38,7 @@ export default class NavigationUi extends Component {
   render() {
     return (
       <Fragment>
-        <Row>
-          <Colxx xxs="12">
-            <BreadcrumbContainer
-              heading="menu.navigation"
-              match={this.props.match}
-            />
-            <Separator className="mb-5" />
-          </Colxx>
-        </Row>
+        
 
         <Row>
           <Colxx xxs="12">

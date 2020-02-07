@@ -8,7 +8,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import IntlMessages from "../../helpers/IntlMessages";
 import { Colxx } from "../../components/common/CustomBootstrap";
 
-class DatePickerExamples extends Component {
+class ReplayTimePicker extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -56,7 +56,7 @@ class DatePickerExamples extends Component {
       <Row>
         <Colxx xxs="12" xl="8" className="mb-4">
               <label>
-                <IntlMessages id="form-components.date-with-time" />
+                <IntlMessages id="form-components.replay"/>
               </label>
               <DatePicker
                 className="mb-5"
@@ -73,6 +73,6 @@ class DatePickerExamples extends Component {
     );
   }
 }
-export default injectIntl(DatePickerExamples);
+export default injectIntl(ReplayTimePicker);
  
 

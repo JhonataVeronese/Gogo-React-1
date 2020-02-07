@@ -13,9 +13,7 @@ class UserCardBasic extends Component {
     render() {
         return (
             <Card className="d-flex flex-row mb-4">
-                <NavLink to={this.props.link || "#"} className="d-flex">
-                    <ThumbnailImage rounded small src={this.props.data.thumb} alt="profile" className="m-4" />
-                </NavLink>
+                
                 <div className=" d-flex flex-grow-1 min-width-zero">
                     <CardBody className=" pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
                         <div className="min-width-zero">
