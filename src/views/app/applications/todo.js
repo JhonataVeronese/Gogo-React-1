@@ -17,12 +17,12 @@ import IntlMessages from "../../../helpers/IntlMessages";
 import { Colxx, Separator } from "../../../components/common/CustomBootstrap";
 import Breadcrumb from "../../../containers/navs/Breadcrumb";
 
-import {
-  getTodoList,
-  getTodoListWithOrder,
-  getTodoListSearch,
-  selectedTodoItemsChange
-} from "../../../redux/actions";
+// import {
+//   getTodoList,
+//   getTodoListWithOrder,
+//   getTodoListSearch,
+//   selectedTodoItemsChange
+// } from "../../../redux/actions";
 import TodoListItem from "../../../components/applications/TodoListItem";
 import AddNewTodoModal from "../../../containers/applications/AddNewTodoModal";
 import TodoApplicationMenu from "../../../containers/applications/TodoApplicationMenu";
@@ -284,10 +284,10 @@ export default injectIntl(
   connect(
     mapStateToProps,
     {
-      getTodoList,
-      getTodoListWithOrder,
-      getTodoListSearch,
-      selectedTodoItemsChange
+      // getTodoList,
+      // getTodoListWithOrder,
+      // getTodoListSearch,
+      // selectedTodoItemsChange
     }
   )(TodoApp)
 );

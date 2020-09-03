@@ -7,7 +7,7 @@ import classnames from "classnames";
 
 import IntlMessages from "../../helpers/IntlMessages";
 import ApplicationMenu from "../../components/common/ApplicationMenu";
-import { getTodoListWithFilter } from "../../redux/actions";
+// import { getTodoListWithFilter } from "../../redux/actions";
 class TodoApplicationMenu extends Component {
   constructor(props) {
     super();
@@ -155,6 +155,6 @@ const mapStateToProps = ({ todoApp }) => {
 export default connect(
   mapStateToProps,
   {
-    getTodoListWithFilter
+    // getTodoListWithFilter
   }
 )(TodoApplicationMenu);
